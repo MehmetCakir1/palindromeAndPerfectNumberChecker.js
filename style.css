@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: rgb(248, 230, 230);
+}
+.container{
+    padding: 2rem;
+}
+.header{
+    width:36rem;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5rem;
+    border-right: 3px solid;
+    margin: auto;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#lowNumber{
+    display: inline-block;
+    max-width: 13rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#highNumber{
+    display: inline-block;
+    max-width: 13rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    
+}
+#palinBtn{
+    width: 14rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid grey;
+    cursor: pointer;
+}
+#palinBtn:active{
+    background-color: rgb(248, 230, 230);
+}
+#perfectBtn{
+    width: 14rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid grey;
+    cursor: pointer;
+}
+#perfectBtn:active{
+    background-color: rgb(248, 230, 230);
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.palindromeList{
+    width: 15rem;
+    height: 30rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    overflow: auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+.perfectList{
+    width: 15rem;
+    height: 30rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    overflow: auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+@media(max-width:590px) {
+    .header{
+        width: 29rem;
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:480px) {
+    #lowNumber,#highNumber{
+        width: 11rem;
+    }
+    .header{
+        width: 24rem;
+        font-size: 1rem;
+    }
+}
+@media(max-width:400px) {
+    .container{
+        padding: 0.8rem;
+    }
+    #lowNumber,#highNumber{
+        width: 9rem;
+    }
+    .header{
+        width: 24rem;
+        font-size: 0.9rem;
+        padding-top: 1rem;
+    }
+    #perfectBtn,#palinBtn{
+        padding: 0.5rem;
+        width: 9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
